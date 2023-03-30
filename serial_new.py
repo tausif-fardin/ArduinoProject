@@ -7,6 +7,8 @@ current_est = 3
 
 def read_data():
     try:
+        #There will be four voltage and current with temp and cv_volt
+        
         # Read values from serial port
         line = ser.readline().decode().strip()
         voltage = 0
