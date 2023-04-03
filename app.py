@@ -41,6 +41,10 @@ def login():
     else:
         return jsonify({'success': False})
 
+@app.route("/arduinodata")
+def data():
+    return render_template('index.html')
+
 #localhost:5000/data
 @app.route('/data')
 def get_data():
